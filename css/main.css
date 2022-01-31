@@ -49,6 +49,17 @@ nav ul{
     
 }
 
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3vw;
+    
+}
+
+/* animaciones y transformaciones */
+
+/* animacion li nav */
+
 nav ul li:hover {
     animation-name: agrandar;
     animation-iteration-count: infinite;
@@ -67,6 +78,8 @@ nav ul li:hover {
     }
 }
 
+/*animaciones fotos seccion modelos y redes sociales */
+
 .imgAgrandar:hover {
     animation-name: agrandarF;
     animation-iteration-count: infinite;
@@ -83,12 +96,25 @@ nav ul li:hover {
     }
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 1.3vw;
-    
+.girar{
+    animation-name: girar;
+    animation-iteration-count: infinite;
+    animation-duration: 40s;
+    animation-timing-function:linear;
 }
+
+@keyframes girar{
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+/* fin animaciones y transformaciones */
+
+
 
 header img{
     width: 80px;
