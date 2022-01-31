@@ -49,6 +49,40 @@ nav ul{
     
 }
 
+nav ul li:hover {
+    animation-name: agrandar;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function:step-start;
+    text-shadow:  rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.281) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;;
+    
+}
+
+@keyframes agrandar{
+    from{
+        transform: scale(1.0);
+    }
+    to{
+        transform: scale(1.4);
+    }
+}
+
+.imgAgrandar:hover {
+    animation-name: agrandarF;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function:step-start;
+}
+
+@keyframes agrandarF{
+    from{
+        transform: scale(1.0);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
 nav ul li a{
     text-decoration: none;
     color: black;
