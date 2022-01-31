@@ -1,0 +1,696 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+/* propiedades "none" en pantalle desktop */
+
+.imgCrane{
+    display: none;
+}
+
+.pModelos320{
+    display: none;
+}
+
+.img320{
+    display: none;
+}
+
+/* propiedades nav */
+.navIcon{
+    display: flex;
+}
+
+nav{
+    width: 100vw;
+    display: flex;
+    background-color: rgba(250, 235, 215, 0.815); 
+    font-family: 'Vast Shadow', cursive;
+    box-shadow: rgba(100, 100, 100, 0.151) 0px 48px 100px 0px;
+
+    
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3vw;
+    
+}
+
+header img{
+    width: 80px;
+    height: 80px;
+}
+
+
+/* propiedades grid */
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "suscribete suscribete"
+    "formulario formulario"
+    "footer footer";
+    grid-template-columns: 2fr 1fr;
+    row-gap: 5vw;
+}
+
+header{
+    grid-area: header;
+}
+
+/* propiedades h1 */
+.bienvenidos{
+    width: 100%;
+    height: 100%;
+    grid-area: header;
+    font-family: 'Staatliches', cursive;
+    justify-content: center;
+    text-shadow: 5px 5px 5px rgb(182, 181, 181);
+    display: flex;
+    align-items: center;
+    font-size: 3vw;
+    
+
+}
+
+/* porpiedades main */
+
+.mainIndex{
+    grid-area: main;
+    display: flex;
+    flex-flow: column wrap;
+    
+
+}
+
+/* fotos bajo titulo */
+
+.galeria{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10%;
+}
+.piluso img{
+    width: 50vh;
+    border: grey outset 3px;
+    border-radius: 50%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}   
+
+.gorra img{
+    width: 50vh;
+    border: grey outset 3px;
+    border-radius: 50%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/* texto "Te ofrecemos..." */
+
+.textoMain{
+    font-family: 'Staatliches', cursive;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    grid-area: textoMain;
+    
+}
+
+
+.textoMain p{
+    width: 80%;
+    margin-bottom: 7%;
+
+}
+
+/* fotos debeajo de texto "Te ofrecemos..." */
+
+.fotosTxt{
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10%;
+    grid-area: fotosTxt;
+    
+    
+}
+
+.fotosTxt img{
+    width: 30%;
+    height: 80%;
+    border: rgb(14, 14, 14) solid 3px;
+    border-radius: 50%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/* propiedades ul de descuentos */
+
+.descuentos{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.descuentos ul li{
+    font-size: 1.4vw;
+    list-style: none;
+    font-family: 'Vast Shadow', cursive;
+    margin: 1vw;
+}
+
+/*propiedades img descuentos */
+
+.imgDescuentos{
+    display: flex;
+    align-items: center;
+}
+
+.imgDescuentos img{
+    margin: 1.2vw;
+    width: 10vw;
+}
+
+/* propiedades texto "Aprovecha..." */
+
+.aprovecha{
+    font-size: 3vw;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    margin-bottom: 5%;
+}
+
+/*propiedades "suscribete" */
+
+.suscribete{
+    grid-area: suscribete;
+    margin: 05% auto;
+    font-size: 2.5vw;
+    font-family: 'Staatliches', cursive;
+}
+
+/* propiedades formulario */
+
+.formulario{
+    grid-area: formulario;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5vw;
+    width: 80%;
+    text-align: center;
+    margin:  0 auto;
+}
+
+.formulario label{
+    margin: 1vw;
+}
+
+.fondo{
+    background-color: antiquewhite;
+    width: 100%;
+    border: rgb(92, 92, 92) outset 0.4vw;
+}
+
+legend{
+    border: black outset 2px;
+    padding: 0.5vw;
+    background-color: white;
+}
+
+/* propiedades footer y boton arriba */
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    background-color: rgb(252, 165, 165);
+    color: black;
+    font-weight: bold;
+    border: black solid 0.2vw;
+    padding: 0.3vw;
+    
+}
+
+.arriba{
+    margin: 0.9vw;
+}
+
+/* propiedades h1 (de los otros 4 html) */
+
+/* propiedades h1 contacto */
+h1{
+    width: 100%;
+    height: 25vh;
+    grid-area: header;
+    font-family: 'Staatliches', cursive;
+    justify-content: center;
+    text-shadow: 5px 5px 5px rgb(182, 181, 181);
+    display: flex;
+    align-items: center;
+    font-size: 4vw;
+}
+
+/* propiedades texto " Nos encantaria */
+
+.nosEncantaria{
+    width: 100%;
+    font-family: 'Staatliches', cursive;
+    font-size: 3vw;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.nosEncantaria p{
+    width:70%;
+}
+
+/* porpiedades imagenes redes sociales */
+
+.imgRedes{
+    width: 20%;
+    height: 42vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgRedes img{
+    width: 10vw;
+}
+/*fotos galeria contacto */
+
+.imgsContacto{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10%;
+    
+
+}
+
+.imgsContacto img{
+    width: 25vw;
+    height: 30vw;
+    border: rgba(0, 0, 0, 0.781) 2px solid;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+
+/* propiedades texto "llena el formulario..." */
+
+.llena{
+    margin: 05% auto;
+    font-size: 2.5vw;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+}
+
+/*propiedades html nosotros */
+
+/* titulo contacto */
+
+.creadorTitulo{
+    width: 22vw;
+    font-family: 'Vast Shadow', cursive;
+    box-shadow: rgba(100, 100, 100, 0.151) 0px 48px 100px 0px;
+    font-size: 1.4vw;
+    margin: 5%;
+    border: outset grey 0.4vw;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+/* titulo encasillado arriba de la foto */
+
+.creadorFoto{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* porpiedades texto al lado de la foto */ 
+
+.textoDaro{
+    width: 70%;
+    font-family: 'Staatliches', cursive;
+    font-size: 2vw;
+    word-spacing: 0.8vw;
+    padding: 5% auto;
+    margin: 0 5%;
+}
+
+/* foto al costado del texto */
+
+.daro{
+    width: 30%;
+}
+
+.daro img{
+    width: 80%;
+    height: 90%0%;
+    margin-left: 10%;
+    border: outset grey 0.4vw;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 50%;
+}
+
+/* propiedades texto debajo del texto principal encasillado */
+
+.queremos{
+   display: flex;
+   justify-content: end;
+}
+
+.queremos p{
+    width: 40%;
+    text-align: center;
+    margin: 5%;
+    font-family: 'Staatliches', cursive;
+    box-shadow: rgba(100, 100, 100, 0.151) 0px 48px 100px 0px;
+    font-size: 1.4vw;
+    border: outset grey 0.4vw;
+    background-color: antiquewhite;
+
+}
+
+.queremos p a{
+    text-decoration: none;
+    color: rgb(250, 114, 114);
+}
+
+/* propiedades html promociones */
+
+/* propiedades main */
+
+.mainPromo{
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    margin: 5% 0;
+    grid-template-areas: "lorem pics"
+                         "lorem pics";
+    grid-template-columns: 1fr 0.3fr;
+    column-gap: 1vw;
+}
+
+/*propiedades texto main */
+
+.lorem{
+    grid-area: lorem;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.6vw;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.lorem p{
+    width: 100%;
+}
+
+/* propiedades fotos main */
+
+.pics{
+    width: 100%;
+    grid-area: pics;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+     
+}
+
+.pics img{
+    width: 30%;
+    height: 30%;
+}
+
+/* propiedades html modelos */
+.mainModelos{
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* propiedades imagenes */
+
+.divImagenes{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.divImagenes img{
+    margin: 5%;
+    width: 20em;
+    height: 20em;
+    border: solid 0.2em rgba(61, 61, 61, 0.842);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    
+    body{
+        width: 100vw;
+        background-color: antiquewhite;
+    }
+
+    main{
+        width: 100%;
+    }
+    
+    .imgNone{
+        display: none;
+    }
+
+    .img320{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .imgCrane{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    h1{
+        display: none;
+    }
+
+    nav{
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .menu{
+        width: 100%;
+        height: 10vh;
+    }
+
+    nav ul li a{
+        font-size: 2.0vw;
+        border: black solid 2px;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .aprovecha{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aprovecha img{
+        margin: 0 auto;
+    }
+
+    .fotosTxt{
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        align-content: space-between;
+    }
+
+    .fotosTxt img{
+        width: 50%;
+        height: 30%;
+    }
+
+    .mate{
+        width: 50%;
+        height: 0%;
+    }
+
+    .descuentos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.5em 0.5em;
+    }
+
+    .pics{
+        height: 20vh;
+    }
+
+    .descuentos ul{
+        text-align: center;
+        
+    }
+
+    .descuentos ul li{
+        
+        font-size: 65%;
+
+    }
+
+    .formulario{
+        font-size: 0.5em;
+    }
+
+    footer{
+        font-size: 0.5em;
+    }
+
+    .lorem p{
+        height: 40vh;
+        word-spacing: 1em;
+    }
+
+    .grid{
+        height: 100vh;
+    }
+
+    .pModelos320{
+        width: 100%;
+        height: 25vh;
+        font-family: 'Staatliches', cursive;
+        justify-content: center;
+        text-shadow: 5px 5px 5px rgb(182, 181, 181);
+        display: flex;
+        align-items: center;
+        font-size: 4vw;
+    }
+
+    .contenedorContacto{
+        height: 100vh;
+    }
+
+    .nosEncantaria{
+        margin-top: 8%;
+    }
+
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px){
+    .divImagenes .img4{
+        width: 88%;
+    }
+
+    .divImagenes .img5{
+        width: 88%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
